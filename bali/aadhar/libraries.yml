@@ -1,5 +1,5 @@
-organism-banner-slider:
+organism-company-block:
   version: "1.x"
   css:
     theme:
-      organisms/banner-slider/banner-slider.css: {}
+      organisms/company-block/company-block.css: {}
