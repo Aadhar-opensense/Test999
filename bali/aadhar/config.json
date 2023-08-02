@@ -3,13 +3,13 @@
   "molecules": [],
   "organisms": [
     {
-      "component": "director-card",
-      "componentName": "Director Card",
+      "component": "full-content-with-cta",
+      "componentName": "Full content with CTA",
       "format": "drupal",
-      "key": "33da2aa4-df4e-e39b-cbcc-ab20c570393e",
+      "key": "52172f9c-726d-4266-02c1-18ce790572cb",
       "traits": [],
-      "createdAt": "2023-04-20T12:16:09.108Z",
-      "updatedAt": "2023-07-14T03:55:53.970Z"
+      "createdAt": "2023-04-20T08:13:35.226Z",
+      "updatedAt": "2023-07-14T03:55:53.840Z"
     }
   ]
 }
