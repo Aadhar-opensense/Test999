@@ -3,14 +3,13 @@
   "molecules": [],
   "organisms": [
     {
-      "css": true,
-      "component": "shareholder-card",
-      "componentName": "Shareholder card",
+      "component": "news-card",
+      "componentName": "News Card",
       "format": "drupal",
-      "key": "ede06d9d-e37b-9891-c7a7-97514380716d",
+      "key": "189a06f5-17c4-97a8-2c23-33e224deb11b",
       "traits": [],
-      "createdAt": "2023-04-20T13:16:09.867Z",
-      "updatedAt": "2023-07-14T10:09:40.469Z"
+      "createdAt": "2023-04-27T07:39:36.616Z",
+      "updatedAt": "2023-07-14T10:09:42.102Z"
     }
   ]
 }
