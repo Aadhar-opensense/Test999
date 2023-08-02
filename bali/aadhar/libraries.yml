@@ -1,5 +1,5 @@
-organism-hero-banner:
+organism-shareholder-card:
   version: "1.x"
   css:
     theme:
-      organisms/hero-banner/hero-banner.css: {}
+      organisms/shareholder-card/shareholder-card.css: {}

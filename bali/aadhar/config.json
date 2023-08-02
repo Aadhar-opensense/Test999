@@ -4,21 +4,13 @@
   "organisms": [
     {
       "css": true,
-      "component": "hero-banner",
-      "componentName": "Hero Banner",
+      "component": "shareholder-card",
+      "componentName": "Shareholder card",
       "format": "drupal",
-      "key": "a5abc75b-8ef7-c638-7173-4e71d4e072f8",
-      "traits": [
-        {
-          "key": "f136c31e-b070-7ce6-d3a9-cce13d42a38d",
-          "type": "text_formatted",
-          "name": "hero_banner_title",
-          "label": "Hero Banner title",
-          "defaultValue": "This is AES"
-        }
-      ],
-      "createdAt": "2023-04-24T11:42:20.766Z",
-      "updatedAt": "2023-07-14T10:09:40.891Z"
+      "key": "ede06d9d-e37b-9891-c7a7-97514380716d",
+      "traits": [],
+      "createdAt": "2023-04-20T13:16:09.867Z",
+      "updatedAt": "2023-07-14T10:09:40.469Z"
     }
   ]
 }

@@ -1,0 +1,18 @@
+.shareholder-card-ede06d9d-e37b-9891-c7a7-97514380716d #i9av-2 {
+  font-size: 3.5em;
+  font-family: Neue-Haas-Grotesk-DSPro-35-Extra-Light;
+}
+.shareholder-card-ede06d9d-e37b-9891-c7a7-97514380716d #i57h-2 {
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+}
+@media (max-width: 991px) {
+  .shareholder-card-ede06d9d-e37b-9891-c7a7-97514380716d #i57h-2 {
+    padding-top: 24px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+    padding-left: 24px;
+  }
+}
