@@ -1,0 +1,5 @@
+organism-banner-slider:
+  version: "1.x"
+  css:
+    theme:
+      organisms/banner-slider/banner-slider.css: {}
