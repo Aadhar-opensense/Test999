@@ -1,5 +1,5 @@
-organism-company-block:
+organism-hero-banner:
   version: "1.x"
   css:
     theme:
-      organisms/company-block/company-block.css: {}
+      organisms/hero-banner/hero-banner.css: {}

@@ -3,13 +3,22 @@
   "molecules": [],
   "organisms": [
     {
-      "component": "full-content-with-cta",
-      "componentName": "Full content with CTA",
+      "css": true,
+      "component": "hero-banner",
+      "componentName": "Hero Banner",
       "format": "drupal",
-      "key": "52172f9c-726d-4266-02c1-18ce790572cb",
-      "traits": [],
-      "createdAt": "2023-04-20T08:13:35.226Z",
-      "updatedAt": "2023-07-14T03:55:53.840Z"
+      "key": "a5abc75b-8ef7-c638-7173-4e71d4e072f8",
+      "traits": [
+        {
+          "key": "f136c31e-b070-7ce6-d3a9-cce13d42a38d",
+          "type": "text_formatted",
+          "name": "hero_banner_title",
+          "label": "Hero Banner title",
+          "defaultValue": "This is AES"
+        }
+      ],
+      "createdAt": "2023-04-24T11:42:20.766Z",
+      "updatedAt": "2023-07-14T10:09:40.891Z"
     }
   ]
 }
