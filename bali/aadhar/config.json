@@ -3,14 +3,13 @@
   "molecules": [],
   "organisms": [
     {
-      "css": true,
-      "component": "company-block",
-      "componentName": "Company Block",
+      "component": "director-card",
+      "componentName": "Director Card",
       "format": "drupal",
-      "key": "2f8cc934-ee7a-4ecf-ce02-0453c82ef519",
+      "key": "33da2aa4-df4e-e39b-cbcc-ab20c570393e",
       "traits": [],
-      "createdAt": "2023-04-26T16:55:14.741Z",
-      "updatedAt": "2023-07-14T10:09:41.781Z"
+      "createdAt": "2023-04-20T12:16:09.108Z",
+      "updatedAt": "2023-07-14T03:55:53.970Z"
     }
   ]
 }
