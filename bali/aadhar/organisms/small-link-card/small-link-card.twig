@@ -1,0 +1,46 @@
+{{ attach_library('undefined/organism-small-link-card') }}
+{% if small_link_card_my_text %}
+  <div class="bootstrap-styles small-link-card-3efa1b17-6671-d7ba-8216-7ceba1a87653">
+    <div id="i2wx">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-12 col-md-6 col-lg-4" id="i2d1">
+            {% include 'molecules/card/card--small-link-card.twig' with {} %}
+          </div>
+          <div class="col-12 col-md-6 col-lg-4" id="ivfu">
+            {% include 'molecules/card/card--small-link-card.twig' with {} %}
+          </div>
+          <div class="col-12 col-md-6 col-lg-4" id="icnbk">
+            <div class="d-inline-flex align-items-center w-100">
+              <a class="link-primary custom-text-decoration-none custom-text-decoration-underline fs-5 w-100 border-color h-100 d-inline-flex"
+                href="#"
+                id="ic74-3">
+                {% include 'atoms/image/image--document-image.twig' with {} %}
+              </a><div class="d-inline-flex w-100" id="iy4y-3">
+                <a class="link-primary custom-text-decoration-none custom-text-decoration-underline fs-5 w-100 border-color h-100 d-inline-flex"
+                  href="#"
+                  id="ic74-3">
+                  <span class="d-inline-flex align-items-center justify-content-between w-100">
+                    View more <span class="ms-2">
+                      <svg fill="currentColor"
+                        height="15"
+                        viewbox="0 0 16 15"
+                        width="16"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.81715 14.1357H6.30563L12.0938 8.28911H0.5V6.48305H12.0938L6.30563 0.635742H8.81715L15.5 7.3854L8.81715 14.1351V14.1357Z"></path>
+                      </svg>
+                    </span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>{{ small_link_card_my_text }}<div>
+      <div class="alert alert-primary" role="alert">
+        &nbsp;
+      </div>
+    </div>
+  </div>
+{% endif %}

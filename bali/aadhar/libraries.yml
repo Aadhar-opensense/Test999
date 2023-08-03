@@ -1,5 +1,10 @@
-organism-shareholder-card:
+organism-team-member-card:
   version: "1.x"
   css:
     theme:
-      organisms/shareholder-card/shareholder-card.css: {}
+      organisms/team-member-card/team-member-card.css: {}
+organism-small-link-card:
+  version: "1.x"
+  css:
+    theme:
+      organisms/small-link-card/small-link-card.css: {}
