@@ -1,10 +1,31 @@
-organism-team-member-card:
+molecule-banner--mid-banner:
   version: "1.x"
   css:
     theme:
-      organisms/team-member-card/team-member-card.css: {}
-organism-small-link-card:
+      molecules/banner/banner--mid-banner.css: {}
+  dependencies:
+    - "molecule-banner--mid-banner-css-dependency-0"
+  js:
+    molecules/banner/banner--mid-banner.js: {}
+molecule-banner--mid-banner-css-dependency-0:
   version: "1.x"
   css:
     theme:
-      organisms/small-link-card/small-link-card.css: {}
+      www.kaka.com:
+        type: "external"
+        minified: true
+molecule-banner--banner-slider-1-redesign:
+  version: "1.x"
+  css:
+    theme:
+      molecules/banner/banner--banner-slider-1-redesign.css: {}
+molecule-banner--banner-slider-1:
+  version: "1.x"
+  css:
+    theme:
+      molecules/banner/banner--banner-slider-1.css: {}
+molecule-banner--banner-slider:
+  version: "1.x"
+  css:
+    theme:
+      molecules/banner/banner--banner-slider.css: {}

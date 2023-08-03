@@ -1,0 +1,17 @@
+.banner--mid-banner-default-8c3f49f3-408f-0bec-bd62-7129f10c6ae1 #i9av {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 64px;
+  margin-left: 0px;
+}
+.banner--mid-banner-default-8c3f49f3-408f-0bec-bd62-7129f10c6ae1 #ie8h {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 64px;
+  margin-left: 0px;
+}
+@media (max-width: 992px) {
+  .banner--mid-banner-default-8c3f49f3-408f-0bec-bd62-7129f10c6ae1 #i9av {
+    font-size: 2em;
+  }
+}
