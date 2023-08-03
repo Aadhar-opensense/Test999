@@ -1,31 +1,5 @@
-molecule-banner--mid-banner:
+organism-ir-footer:
   version: "1.x"
   css:
     theme:
-      molecules/banner/banner--mid-banner.css: {}
-  dependencies:
-    - "molecule-banner--mid-banner-css-dependency-0"
-  js:
-    molecules/banner/banner--mid-banner.js: {}
-molecule-banner--mid-banner-css-dependency-0:
-  version: "1.x"
-  css:
-    theme:
-      www.kaka.com:
-        type: "external"
-        minified: true
-molecule-banner--banner-slider-1-redesign:
-  version: "1.x"
-  css:
-    theme:
-      molecules/banner/banner--banner-slider-1-redesign.css: {}
-molecule-banner--banner-slider-1:
-  version: "1.x"
-  css:
-    theme:
-      molecules/banner/banner--banner-slider-1.css: {}
-molecule-banner--banner-slider:
-  version: "1.x"
-  css:
-    theme:
-      molecules/banner/banner--banner-slider.css: {}
+      organisms/ir-footer/ir-footer.css: {}

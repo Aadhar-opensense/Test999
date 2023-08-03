@@ -1,47 +1,16 @@
 {
   "atoms": [],
-  "molecules": [
+  "molecules": [],
+  "organisms": [
     {
       "css": true,
-      "js": true,
-      "component": "banner--mid-banner",
-      "componentName": "Banner Mid banner",
+      "component": "ir-footer",
+      "componentName": "IR Footer",
       "format": "drupal",
-      "key": "default-8c3f49f3-408f-0bec-bd62-7129f10c6ae1",
+      "key": "59e4ee5e-8a07-ce9d-026e-18fe8f85fb40",
       "traits": [],
-      "createdAt": "2023-04-20T08:28:22.012Z",
-      "updatedAt": "2023-07-14T10:09:36.267Z"
-    },
-    {
-      "css": true,
-      "component": "banner--banner-slider-1-redesign",
-      "componentName": "Banner Banner Slider 1 Redesign",
-      "format": "drupal",
-      "key": "a11dde15-b46d-3bd1-27ec-22855db518e7",
-      "traits": [],
-      "createdAt": "2023-04-20T08:28:22.012Z",
-      "updatedAt": "2023-07-14T10:09:36.267Z"
-    },
-    {
-      "css": true,
-      "component": "banner--banner-slider-1",
-      "componentName": "Banner Banner Slider -1",
-      "format": "drupal",
-      "key": "cc06ae5a-fb5d-4397-99a7-24cf06b03d87",
-      "traits": [],
-      "createdAt": "2023-04-20T08:28:22.012Z",
-      "updatedAt": "2023-07-14T10:09:36.267Z"
-    },
-    {
-      "css": true,
-      "component": "banner--banner-slider",
-      "componentName": "Banner Banner Slider",
-      "format": "drupal",
-      "key": "d7f85767-d845-aa98-9e77-af39c551f7cc",
-      "traits": [],
-      "createdAt": "2023-04-20T08:28:22.012Z",
-      "updatedAt": "2023-07-14T10:09:36.267Z"
+      "createdAt": "2023-05-01T13:31:34.925Z",
+      "updatedAt": "2023-07-14T10:09:43.533Z"
     }
-  ],
-  "organisms": []
+  ]
 }
