@@ -1,13 +1,3 @@
-atom-component--text:
-  version: "1.x"
-  css:
-    theme:
-      atoms/component/component--text.css: {}
-atom-spacing--placeholder-div:
-  version: "1.x"
-  css:
-    theme:
-      atoms/spacing/spacing--placeholder-div.css: {}
 molecule-molecules--example-1:
   version: "1.x"
   js:
