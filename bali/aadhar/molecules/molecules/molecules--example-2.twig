@@ -1,0 +1,35 @@
+{{ attach_library('Lenovo/molecule-molecules--example-2') }}
+{% if
+  molecules_example_2_1_component_image_photo
+    and molecules_example_2_2_component_image_photo
+    and molecules_example_2_1_component_text_umbrella
+    and molecules_example_2_2_component_text_umbrella
+    and molecules_example_2_1_component_link_link %}
+  <div class="bootstrap-styles molecules--example-2-b19123b7-c4c9-740e-9b10-583692bc86a4">
+    <div>
+      {% include 'atoms/component/component--image.twig' with {
+        component_image_photo: molecules_example_2_1_component_image_photo
+      } %}
+    </div>
+    <div>
+      {% include 'atoms/component/component--image.twig' with {
+        component_image_photo: molecules_example_2_1_component_image_photo
+      } %}
+    </div>
+    <div>
+      {% include 'atoms/component/component--text.twig' with {
+        component_text_umbrella: molecules_example_2_1_component_text_umbrella
+      } %}
+    </div>
+    <div>
+      {% include 'atoms/component/component--text.twig' with {
+        component_text_umbrella: molecules_example_2_1_component_text_umbrella
+      } %}
+    </div>
+    <div>
+      {% include 'atoms/component/component--link.twig' with {
+        component_link_link: molecules_example_2_1_component_link_link
+      } %}
+    </div>
+  </div>
+{% endif %}

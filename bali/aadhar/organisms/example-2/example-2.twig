@@ -1,0 +1,19 @@
+{{ attach_library('Lenovo/organism-example-2') }}
+{% if
+  example_2_1_molecules_example_2_1_component_image_photo
+    and example_2_1_molecules_example_2_2_component_image_photo
+    and example_2_1_molecules_example_2_1_component_text_umbrella
+    and example_2_1_molecules_example_2_2_component_text_umbrella
+    and example_2_1_molecules_example_2_1_component_link_link %}
+  <div class="bootstrap-styles example-2-61a08564-3cf9-0976-f47a-e22e3381fe52">
+    <div>
+      {% include 'molecules/molecules/molecules--example-2.twig' with {
+        molecules_example_2_1_component_image_photo: example_2_1_molecules_example_2_1_component_image_photo,
+        molecules_example_2_2_component_image_photo: example_2_1_molecules_example_2_2_component_image_photo,
+        molecules_example_2_1_component_text_umbrella: example_2_1_molecules_example_2_1_component_text_umbrella,
+        molecules_example_2_2_component_text_umbrella: example_2_1_molecules_example_2_2_component_text_umbrella,
+        molecules_example_2_1_component_link_link: example_2_1_molecules_example_2_1_component_link_link
+      } %}
+    </div>
+  </div>
+{% endif %}
