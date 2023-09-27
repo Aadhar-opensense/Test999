@@ -1,0 +1,73 @@
+$schema: "https://git.drupalcode.org/project/sdc/-/raw/1.x/src/metadata.schema.json"
+name: "Example 2"
+description: "Example 2"
+libraryOverrides:
+  dependencies:
+    - "core/drupal"
+props:
+  type: "object"
+  properties:
+    example_2_1_molecules_example_2_1_component_image_photo_img_source:
+      title: "example_2_1_molecules_example_2_1_component_image_photo_img_source"
+      description: "example_2_1_molecules_example_2_1_component_image_photo_img_source"
+      type: "string"
+      examples:
+        - "https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823_1280.jpg"
+    example_2_1_molecules_example_2_1_component_image_photo_img_alt_text:
+      title: "example_2_1_molecules_example_2_1_component_image_photo_img_alt_text"
+      description: "example_2_1_molecules_example_2_1_component_image_photo_img_alt_text"
+      type: "string"
+      examples:
+        - "Scenery"
+    example_2_1_molecules_example_2_1_component_image_photo_img_styles:
+      title: "example_2_1_molecules_example_2_1_component_image_photo_img_styles"
+      description: "example_2_1_molecules_example_2_1_component_image_photo_img_styles"
+      type: "string"
+      examples:
+        - "circular"
+    example_2_1_molecules_example_2_2_component_image_photo_img_source:
+      title: "example_2_1_molecules_example_2_2_component_image_photo_img_source"
+      description: "example_2_1_molecules_example_2_2_component_image_photo_img_source"
+      type: "string"
+      examples:
+        - "https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823_1280.jpg"
+    example_2_1_molecules_example_2_2_component_image_photo_img_alt_text:
+      title: "example_2_1_molecules_example_2_2_component_image_photo_img_alt_text"
+      description: "example_2_1_molecules_example_2_2_component_image_photo_img_alt_text"
+      type: "string"
+      examples:
+        - "Scenery"
+    example_2_1_molecules_example_2_2_component_image_photo_img_styles:
+      title: "example_2_1_molecules_example_2_2_component_image_photo_img_styles"
+      description: "example_2_1_molecules_example_2_2_component_image_photo_img_styles"
+      type: "string"
+      examples:
+        - "circular"
+    example_2_1_molecules_example_2_1_component_text_umbrella:
+      title: "example_2_1_molecules_example_2_1_component_text_umbrella"
+      description: "example_2_1_molecules_example_2_1_component_text_umbrella"
+      type: "string"
+      examples:
+        - "Chata"
+    example_2_1_molecules_example_2_2_component_text_umbrella:
+      title: "example_2_1_molecules_example_2_2_component_text_umbrella"
+      description: "example_2_1_molecules_example_2_2_component_text_umbrella"
+      type: "string"
+      examples:
+        - "Chata"
+    example_2_1_molecules_example_2_1_component_link_link_title:
+      title: "example_2_1_molecules_example_2_1_component_link_link_title"
+      description: "example_2_1_molecules_example_2_1_component_link_link_title"
+      type: "string"
+      examples:
+        - "Google"
+    example_2_1_molecules_example_2_1_component_link_link_url:
+      title: "example_2_1_molecules_example_2_1_component_link_link_url"
+      description: "example_2_1_molecules_example_2_1_component_link_link_url"
+      type: "string"
+      examples:
+        - "www.google.com"
+slots:
+  Example 2_body:
+    title: "Example 2"
+    description: "Example 2"

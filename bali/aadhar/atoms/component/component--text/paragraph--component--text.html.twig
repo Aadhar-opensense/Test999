@@ -1,0 +1,19 @@
+{% set classes = [
+  'paragraph',
+  'paragraph--type--' ~ (paragraph.bundle|clean_class),
+  view_mode ? 'paragraph--view-mode--' ~ (view_mode|clean_class),
+  not paragraph.isPublished() ? 'paragraph--unpublished'
+] %}
+{% block paragraph %}
+  <div {{ attributes.addClass(classes) }}>
+    {% block content %}
+      {% if content.umba %}
+        <div class="bootstrap-styles component--text-59c68146-0d07-d3e5-1a73-28c16af5dff0">
+          <div class="alert alert-primary" role="alert">
+            {{ content.umba }}
+          </div>
+        </div>
+      {% endif %}
+    {% endblock %}
+  </div>
+{% endblock %}

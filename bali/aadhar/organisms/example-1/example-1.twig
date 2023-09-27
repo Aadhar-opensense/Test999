@@ -1,15 +1,22 @@
-{{ attach_library('Lenovo/organism-example-1') }}
 {% if
   example_1_1_molecules_example_1_1_component_text_umbrella
-    and example_1_1_molecules_example_1_1_component_image_photo
-    and example_1_1_molecules_example_1_1_component_link_link %}
+    and example_1_1_molecules_example_1_1_component_image_photo_img_source
+    and example_1_1_molecules_example_1_1_component_image_photo_img_alt_text
+    and example_1_1_molecules_example_1_1_component_link_link_title
+    and example_1_1_molecules_example_1_1_component_link_link_link %}
   <div class="bootstrap-styles example-1-97b84028-bc6b-5da5-b712-04e3df9503c3">
     <div>
-      {% include 'molecules/molecules/molecules--example-1.twig' with {
-        molecules_example_1_1_component_text_umbrella: example_1_1_molecules_example_1_1_component_text_umbrella,
-        molecules_example_1_1_component_image_photo: example_1_1_molecules_example_1_1_component_image_photo,
-        molecules_example_1_1_component_link_link: example_1_1_molecules_example_1_1_component_link_link
-      } %}
+      {% embed 'undefined:molecules--example-1'
+        with {
+          molecules_example_1_1_component_text_umbrella: example_1_1_molecules_example_1_1_component_text_umbrella,
+          molecules_example_1_1_component_image_photo_img_source: example_1_1_molecules_example_1_1_component_image_photo_img_source,
+          molecules_example_1_1_component_image_photo_img_alt_text: example_1_1_molecules_example_1_1_component_image_photo_img_alt_text,
+          molecules_example_1_1_component_link_link_title: example_1_1_molecules_example_1_1_component_link_link_title,
+          molecules_example_1_1_component_link_link_link: example_1_1_molecules_example_1_1_component_link_link_link
+        }
+      %}
+
+      {% endembed %}
     </div>
   </div>
 {% endif %}

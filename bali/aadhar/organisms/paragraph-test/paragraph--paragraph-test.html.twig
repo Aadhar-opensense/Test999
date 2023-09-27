@@ -1,0 +1,15 @@
+{% set classes = [
+  'paragraph',
+  'paragraph--type--' ~ (paragraph.bundle|clean_class),
+  view_mode ? 'paragraph--view-mode--' ~ (view_mode|clean_class),
+  not paragraph.isPublished() ? 'paragraph--unpublished'
+] %}
+{% block paragraph %}
+  <div {{ attributes.addClass(classes) }}>
+    {% block content %}
+      {% if content.king %}
+        <div class="bootstrap-styles paragraph-test-6647dad0-ab83-e80d-0ea7-58356cb97c2a"></div>
+      {% endif %}
+    {% endblock %}
+  </div>
+{% endblock %}

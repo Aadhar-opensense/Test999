@@ -1,0 +1,10 @@
+$schema: "https://git.drupalcode.org/project/sdc/-/raw/1.x/src/metadata.schema.json"
+name: "Seven Columns"
+description: "Seven Columns"
+libraryOverrides:
+  dependencies:
+    - "core/drupal"
+slots:
+  Seven Columns_body:
+    title: "Seven Columns"
+    description: "Seven Columns"

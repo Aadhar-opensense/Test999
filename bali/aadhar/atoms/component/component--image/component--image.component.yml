@@ -1,0 +1,31 @@
+$schema: "https://git.drupalcode.org/project/sdc/-/raw/1.x/src/metadata.schema.json"
+name: "Image"
+description: "Image"
+libraryOverrides:
+  dependencies:
+    - "core/drupal"
+props:
+  type: "object"
+  properties:
+    component_image_photo_img_source:
+      title: "component_image_photo_img_source"
+      description: "component_image_photo_img_source"
+      type: "string"
+      examples:
+        - "https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823_1280.jpg"
+    component_image_photo_img_alt_text:
+      title: "component_image_photo_img_alt_text"
+      description: "component_image_photo_img_alt_text"
+      type: "string"
+      examples:
+        - "Scenery"
+    component_image_photo_img_styles:
+      title: "component_image_photo_img_styles"
+      description: "component_image_photo_img_styles"
+      type: "string"
+      examples:
+        - "circular"
+slots:
+  Image_body:
+    title: "Image"
+    description: "Image"

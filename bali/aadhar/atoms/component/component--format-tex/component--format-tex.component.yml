@@ -1,0 +1,19 @@
+$schema: "https://git.drupalcode.org/project/sdc/-/raw/1.x/src/metadata.schema.json"
+name: "Format Tex"
+description: "Format Tex"
+libraryOverrides:
+  dependencies:
+    - "core/drupal"
+props:
+  type: "object"
+  properties:
+    component_format_tex_singh:
+      title: "component_format_tex_singh"
+      description: "component_format_tex_singh"
+      type: "string"
+      examples:
+        - "Singh is King"
+slots:
+  Format Tex_body:
+    title: "Format Tex"
+    description: "Format Tex"

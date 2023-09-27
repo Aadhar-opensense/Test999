@@ -1,0 +1,26 @@
+{% if
+  molecules_example_1_1_component_text_umbrella
+    and molecules_example_1_1_component_image_photo_img_source
+    and molecules_example_1_1_component_image_photo_img_alt_text
+    and molecules_example_1_1_component_link_link_title
+    and molecules_example_1_1_component_link_link_link %}
+  <div class="bootstrap-styles molecules--example-1-6b455891-ffac-b34e-4ba6-d4769b5abe1a">
+    <div>
+      {% include 'undefined:component--text' with {
+        component_text_umbrella: molecules_example_1_1_component_text_umbrella
+      } %}
+    </div>
+    <div>
+      {% include 'undefined:component--image' with {
+        component_image_photo_img_source: molecules_example_1_1_component_image_photo_img_source,
+        component_image_photo_img_alt_text: molecules_example_1_1_component_image_photo_img_alt_text
+      } %}
+    </div>
+    <div>
+      {% include 'undefined:component--link' with {
+        component_link_link_title: molecules_example_1_1_component_link_link_title,
+        component_link_link_link: molecules_example_1_1_component_link_link_link
+      } %}
+    </div>
+  </div>
+{% endif %}

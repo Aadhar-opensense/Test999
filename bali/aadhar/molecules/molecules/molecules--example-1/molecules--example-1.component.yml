@@ -1,0 +1,49 @@
+$schema: "https://git.drupalcode.org/project/sdc/-/raw/1.x/src/metadata.schema.json"
+name: "Example 1"
+description: "Example 1"
+libraryOverrides:
+  dependencies:
+    - "core/drupal"
+props:
+  type: "object"
+  properties:
+    molecules_example_1_1_component_text_umbrella:
+      title: "molecules_example_1_1_component_text_umbrella"
+      description: "molecules_example_1_1_component_text_umbrella"
+      type: "string"
+      examples:
+        - "Chata"
+    molecules_example_1_1_component_image_photo_img_source:
+      title: "molecules_example_1_1_component_image_photo_img_source"
+      description: "molecules_example_1_1_component_image_photo_img_source"
+      type: "string"
+      examples:
+        - "https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823_1280.jpg"
+    molecules_example_1_1_component_image_photo_img_alt_text:
+      title: "molecules_example_1_1_component_image_photo_img_alt_text"
+      description: "molecules_example_1_1_component_image_photo_img_alt_text"
+      type: "string"
+      examples:
+        - "Scenery"
+    molecules_example_1_1_component_image_photo_img_styles:
+      title: "molecules_example_1_1_component_image_photo_img_styles"
+      description: "molecules_example_1_1_component_image_photo_img_styles"
+      type: "string"
+      examples:
+        - "circular"
+    molecules_example_1_1_component_link_link_title:
+      title: "molecules_example_1_1_component_link_link_title"
+      description: "molecules_example_1_1_component_link_link_title"
+      type: "string"
+      examples:
+        - "Google"
+    molecules_example_1_1_component_link_link_url:
+      title: "molecules_example_1_1_component_link_link_url"
+      description: "molecules_example_1_1_component_link_link_url"
+      type: "string"
+      examples:
+        - "www.google.com"
+slots:
+  Example 1_body:
+    title: "Example 1"
+    description: "Example 1"

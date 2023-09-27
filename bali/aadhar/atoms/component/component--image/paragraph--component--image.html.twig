@@ -1,0 +1,20 @@
+{% set classes = [
+  'paragraph',
+  'paragraph--type--' ~ (paragraph.bundle|clean_class),
+  view_mode ? 'paragraph--view-mode--' ~ (view_mode|clean_class),
+  not paragraph.isPublished() ? 'paragraph--unpublished'
+] %}
+{% block paragraph %}
+  <div {{ attributes.addClass(classes) }}>
+    {% block content %}
+      {% if content.photo_img_source and content.photo_img_alt_text %}
+        <div class="bootstrap-styles component--image-622eab5e-ba74-7333-5086-ed9365cce3aa">
+          {% if content.photo_img_source %}
+            <img src="{{ content.photo_img_source }}"
+              alt="{{ content.photo_img_alt_text }}" />
+          {% endif %}
+        </div>
+      {% endif %}
+    {% endblock %}
+  </div>
+{% endblock %}

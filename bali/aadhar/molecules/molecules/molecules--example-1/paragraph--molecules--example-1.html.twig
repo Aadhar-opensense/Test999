@@ -1,0 +1,45 @@
+{% set classes = [
+  'paragraph',
+  'paragraph--type--' ~ (paragraph.bundle|clean_class),
+  view_mode ? 'paragraph--view-mode--' ~ (view_mode|clean_class),
+  not paragraph.isPublished() ? 'paragraph--unpublished'
+] %}
+{% block paragraph %}
+  <div {{ attributes.addClass(classes) }}>
+    {% block content %}
+      {% if
+        content.umba
+          and content.photo_img_source
+          and content.photo_img_alt_text
+          and content.link_title
+          and content.link_link %}
+        <div class="bootstrap-styles molecules--example-1-6b455891-ffac-b34e-4ba6-d4769b5abe1a">
+          {% set link_title = content.link_title[0]['title'] %}
+          {% set link_link = content.link_title[0]['#url'] %}
+          {% set photo_img_source =
+            file_url(content.photo_img_source[0]['#item'].entity.uri.value)
+          %}
+          {% set photo_img_alt_text =
+            content.photo_img_source[0]['#item'].entity._referringItem.alt
+          %} <div>
+            {% include 'undefined:component--text' with {
+              component_text_umbrella: content.umba[0]
+            } %}
+          </div>
+          <div>
+            {% include 'undefined:component--image' with {
+              component_image_photo_img_source: photo_img_source,
+              component_image_photo_img_alt_text: photo_img_alt_text
+            } %}
+          </div>
+          <div>
+            {% include 'undefined:component--link' with {
+              component_link_link_title: link_title,
+              component_link_link_link: link_link
+            } %}
+          </div>
+        </div>
+      {% endif %}
+    {% endblock %}
+  </div>
+{% endblock %}

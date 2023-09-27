@@ -1,0 +1,19 @@
+$schema: "https://git.drupalcode.org/project/sdc/-/raw/1.x/src/metadata.schema.json"
+name: "Text"
+description: "Text"
+libraryOverrides:
+  dependencies:
+    - "core/drupal"
+props:
+  type: "object"
+  properties:
+    component_text_umbrella:
+      title: "component_text_umbrella"
+      description: "component_text_umbrella"
+      type: "string"
+      examples:
+        - "Chata"
+slots:
+  Text_body:
+    title: "Text"
+    description: "Text"

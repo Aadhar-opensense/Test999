@@ -1,0 +1,24 @@
+{% set classes = [
+  'block',
+  'block-' ~ (configuration.provider|clean_class),
+  'block-' ~ (plugin_id|clean_class)
+] %}
+
+<div {{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  {% if label %}
+    <h2 {{ title_attributes }}>
+      {{ label }}
+    </h2>
+  {% endif %}
+  {{ title_suffix }}
+  {% block content %}
+    {% if content.umba %}
+      <div class="bootstrap-styles component--text-59c68146-0d07-d3e5-1a73-28c16af5dff0">
+        <div class="alert alert-primary" role="alert">
+          {{ content.umba }}
+        </div>
+      </div>
+    {% endif %}
+  {% endblock %}
+</div>

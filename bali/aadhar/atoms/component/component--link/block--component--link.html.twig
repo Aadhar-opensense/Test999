@@ -1,0 +1,24 @@
+{% set classes = [
+  'block',
+  'block-' ~ (configuration.provider|clean_class),
+  'block-' ~ (plugin_id|clean_class)
+] %}
+
+<div {{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  {% if label %}
+    <h2 {{ title_attributes }}>
+      {{ label }}
+    </h2>
+  {% endif %}
+  {{ title_suffix }}
+  {% block content %}
+    {% if content.link_title and content.link_link %}
+      <div class="bootstrap-styles component--link-6b7f7360-d401-ad3a-ef52-724e157abf7f">
+        {% if content.link %}
+          <a href="{{ content.link['#url'] }}">{{ content.link['#title'] }}</a>
+        {% endif %}
+      </div>
+    {% endif %}
+  {% endblock %}
+</div>

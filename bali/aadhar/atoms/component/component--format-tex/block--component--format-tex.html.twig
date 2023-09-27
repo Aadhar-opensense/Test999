@@ -1,0 +1,22 @@
+{% set classes = [
+  'block',
+  'block-' ~ (configuration.provider|clean_class),
+  'block-' ~ (plugin_id|clean_class)
+] %}
+
+<div {{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  {% if label %}
+    <h2 {{ title_attributes }}>
+      {{ label }}
+    </h2>
+  {% endif %}
+  {{ title_suffix }}
+  {% block content %}
+    {% if content.sing %}
+      <div class="bootstrap-styles component--format-tex-b92dc90a-87d9-43e9-63fe-11741e7fc779">
+        {{ content.sing|raw }}
+      </div>
+    {% endif %}
+  {% endblock %}
+</div>

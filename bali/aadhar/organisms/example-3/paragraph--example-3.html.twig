@@ -1,0 +1,62 @@
+{% set classes = [
+  'paragraph',
+  'paragraph--type--' ~ (paragraph.bundle|clean_class),
+  view_mode ? 'paragraph--view-mode--' ~ (view_mode|clean_class),
+  not paragraph.isPublished() ? 'paragraph--unpublished'
+] %}
+{% block paragraph %}
+  <div {{ attributes.addClass(classes) }}>
+    {% block content %}
+      {% if
+        content.umba_rain
+          and content.photo_img_source
+          and content.photo_img_alt_text
+          and content.link_title
+          and content.link_link
+          and content.umba %}
+        <div class="bootstrap-styles example-3-c8ed93f5-6645-d745-33b5-a8030702f76b">
+          {% set link_title = content.link_title[0]['title'] %}
+          {% set link_link = content.link_title[0]['#url'] %}
+          {% set photo_img_source =
+            file_url(content.photo_img_source[0]['#item'].entity.uri.value)
+          %}
+          {% set photo_img_alt_text =
+            content.photo_img_source[0]['#item'].entity._referringItem.alt
+          %} {% set link_title = content.link_title[0]['title'] %}
+          {% set link_link = content.link_title[0]['#url'] %}
+          {% set photo_img_source =
+            file_url(content.photo_img_source[0]['#item'].entity.uri.value)
+          %}
+          {% set photo_img_alt_text =
+            content.photo_img_source[0]['#item'].entity._referringItem.alt
+          %} <div>
+            {% embed 'undefined:molecules--example-1'
+              with {
+                molecules_example_1_1_component_text_umbrella: content.umba_rain[0],
+                molecules_example_1_1_component_image_photo_img_source: photo_img_source,
+                molecules_example_1_1_component_image_photo_img_alt_text: photo_img_alt_text,
+                molecules_example_1_1_component_link_link_title: link_title,
+                molecules_example_1_1_component_link_link_link: link_link
+              }
+            %}
+
+            {% endembed %}
+          </div>
+          <div>
+            {% embed 'undefined:molecules--example-1'
+              with {
+                molecules_example_1_1_component_text_umbrella: content.umba[0],
+                molecules_example_1_1_component_image_photo_img_source: photo_img_source,
+                molecules_example_1_1_component_image_photo_img_alt_text: photo_img_alt_text,
+                molecules_example_1_1_component_link_link_title: link_title,
+                molecules_example_1_1_component_link_link_link: link_link
+              }
+            %}
+
+            {% endembed %}
+          </div>
+        </div>
+      {% endif %}
+    {% endblock %}
+  </div>
+{% endblock %}

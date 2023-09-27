@@ -1,0 +1,10 @@
+$schema: "https://git.drupalcode.org/project/sdc/-/raw/1.x/src/metadata.schema.json"
+name: "One Column"
+description: "One Column"
+libraryOverrides:
+  dependencies:
+    - "core/drupal"
+slots:
+  One Column_body:
+    title: "One Column"
+    description: "One Column"

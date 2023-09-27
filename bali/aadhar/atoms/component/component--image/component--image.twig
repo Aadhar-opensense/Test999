@@ -1,0 +1,8 @@
+{% if component_image_photo_img_source and component_image_photo_img_alt_text %}
+  <div class="bootstrap-styles component--image-622eab5e-ba74-7333-5086-ed9365cce3aa">
+    {% if component_image_photo_img_source %}
+      <img src="{{ component_image_photo_img_source }}"
+        alt="{{ component_image_photo_img_alt_text }}" />
+    {% endif %}
+  </div>
+{% endif %}

@@ -1,0 +1,25 @@
+$schema: "https://git.drupalcode.org/project/sdc/-/raw/1.x/src/metadata.schema.json"
+name: "Link"
+description: "Link"
+libraryOverrides:
+  dependencies:
+    - "core/drupal"
+props:
+  type: "object"
+  properties:
+    component_link_link_title:
+      title: "component_link_link_title"
+      description: "component_link_link_title"
+      type: "string"
+      examples:
+        - "Google"
+    component_link_link_url:
+      title: "component_link_link_url"
+      description: "component_link_link_url"
+      type: "string"
+      examples:
+        - "www.google.com"
+slots:
+  Link_body:
+    title: "Link"
+    description: "Link"

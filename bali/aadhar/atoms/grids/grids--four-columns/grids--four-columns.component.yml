@@ -1,0 +1,10 @@
+$schema: "https://git.drupalcode.org/project/sdc/-/raw/1.x/src/metadata.schema.json"
+name: "Four Columns"
+description: "Four Columns"
+libraryOverrides:
+  dependencies:
+    - "core/drupal"
+slots:
+  Four Columns_body:
+    title: "Four Columns"
+    description: "Four Columns"

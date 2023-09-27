@@ -1,0 +1,10 @@
+$schema: "https://git.drupalcode.org/project/sdc/-/raw/1.x/src/metadata.schema.json"
+name: "Eight Columns"
+description: "Eight Columns"
+libraryOverrides:
+  dependencies:
+    - "core/drupal"
+slots:
+  Eight Columns_body:
+    title: "Eight Columns"
+    description: "Eight Columns"

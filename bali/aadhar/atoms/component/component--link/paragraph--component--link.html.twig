@@ -1,0 +1,21 @@
+{% set classes = [
+  'paragraph',
+  'paragraph--type--' ~ (paragraph.bundle|clean_class),
+  view_mode ? 'paragraph--view-mode--' ~ (view_mode|clean_class),
+  not paragraph.isPublished() ? 'paragraph--unpublished'
+] %}
+{% block paragraph %}
+  <div {{ attributes.addClass(classes) }}>
+    {% block content %}
+      {% if content.link_title and content.link_link %}
+        <div class="bootstrap-styles component--link-6b7f7360-d401-ad3a-ef52-724e157abf7f">
+          {% if content.link %}
+            <a href="{{ content.link['#url'] }}">
+              {{ content.link['#title'] }}
+            </a>
+          {% endif %}
+        </div>
+      {% endif %}
+    {% endblock %}
+  </div>
+{% endblock %}

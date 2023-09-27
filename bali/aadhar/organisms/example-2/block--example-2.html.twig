@@ -1,0 +1,57 @@
+{% set classes = [
+  'block',
+  'block-' ~ (configuration.provider|clean_class),
+  'block-' ~ (plugin_id|clean_class)
+] %}
+
+<div {{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  {% if label %}
+    <h2 {{ title_attributes }}>
+      {{ label }}
+    </h2>
+  {% endif %}
+  {{ title_suffix }}
+  {% block content %}
+    {% if
+      content.photo_img_source
+        and content.photo_img_alt_text
+        and content.photo_new_img_source
+        and content.photo_new_img_alt_text
+        and content.umba
+        and content.umba_new
+        and content.link_title
+        and content.link_link %}
+      <div class="bootstrap-styles example-2-61a08564-3cf9-0976-f47a-e22e3381fe52">
+        {% set link_title = content.link_title[0]['title'] %}
+        {% set link_link = content.link_title[0]['#url'] %}
+        {% set photo_new_img_source =
+          file_url(content.photo_new_img_source[0]['#item'].entity.uri.value)
+        %}
+        {% set photo_new_img_alt_text =
+          content.photo_new_img_source[0]['#item'].entity._referringItem.alt
+        %} {% set photo_img_source =
+          file_url(content.photo_img_source[0]['#item'].entity.uri.value)
+        %}
+        {% set photo_img_alt_text =
+          content.photo_img_source[0]['#item'].entity._referringItem.alt
+        %} <div>
+          {% embed 'undefined:molecules--example-2'
+            with {
+              molecules_example_2_1_component_image_photo_img_source: photo_img_source,
+              molecules_example_2_1_component_image_photo_img_alt_text: photo_img_alt_text,
+              molecules_example_2_2_component_image_photo_img_source: photo_new_img_source,
+              molecules_example_2_2_component_image_photo_img_alt_text: photo_new_img_alt_text,
+              molecules_example_2_1_component_text_umbrella: content.umba[0],
+              molecules_example_2_2_component_text_umbrella: content.umba_new[0],
+              molecules_example_2_1_component_link_link_title: link_title,
+              molecules_example_2_1_component_link_link_link: link_link
+            }
+          %}
+
+          {% endembed %}
+        </div>
+      </div>
+    {% endif %}
+  {% endblock %}
+</div>

@@ -1,0 +1,20 @@
+{% set classes = [
+  'block',
+  'block-' ~ (configuration.provider|clean_class),
+  'block-' ~ (plugin_id|clean_class)
+] %}
+
+<div {{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  {% if label %}
+    <h2 {{ title_attributes }}>
+      {{ label }}
+    </h2>
+  {% endif %}
+  {{ title_suffix }}
+  {% block content %}
+    {% if content.king %}
+      <div class="bootstrap-styles paragraph-test-6647dad0-ab83-e80d-0ea7-58356cb97c2a"></div>
+    {% endif %}
+  {% endblock %}
+</div>

@@ -1,0 +1,19 @@
+$schema: "https://git.drupalcode.org/project/sdc/-/raw/1.x/src/metadata.schema.json"
+name: "Paragraph Test"
+description: "Paragraph Test"
+libraryOverrides:
+  dependencies:
+    - "core/drupal"
+props:
+  type: "object"
+  properties:
+    paragraph_test_opensenses:
+      title: "paragraph_test_opensenses"
+      description: "paragraph_test_opensenses"
+      type: "string"
+      examples:
+        - null
+slots:
+  Paragraph Test_body:
+    title: "Paragraph Test"
+    description: "Paragraph Test"
